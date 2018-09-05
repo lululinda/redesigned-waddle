@@ -1,0 +1,62 @@
+<?php
+required_once("./php/myDBC.php");
+if(isset($_SESSION['session']))
+{
+    header("location:principal.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link type="text/css" href="./css/style.css" rel="stylesheet" />
+</head>
+ 
+<body>
+ 
+    <div id="registrar">
+<a href="./php/registro.php"</a>Registrarse</a>
+</div> <!-- fin opcion-->
+ 
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <div id="cabecera" >
+                
+ 
+            <div id="cuerpo">
+                <form id="form-login" action="" method="post" autocomplete="off">
+                    <!--A saber, el atributo for funciona como el id.-->
+                    <!--ejemplo <label for="usuario">Usuario:</label>-->
+                    <!--required es nuevo en html5, si el campo está vacío te avisa, pero cuidado, no valida la información-->
+
+                <div>    <img src=original.jpg alt="original">
+
+            <div class="image"><h1><span>Floto encima de la imagen:<span>&amp;</span><br /><span>&amp;</span>Soy un fantasma</h1></span>
+</div
+
+                <p><h1>Una Mujer a la vez...</h1></p>
+
+                <p><h1>Mujeres Unidas y Activas...</h1></p></div> 
+
+            </div>
+        
+                    <p><label >Usuario:</label></p>
+                        <input name="usuario" type="text" id="usuario" placeholder="@mujeresunidas.net" autofocus="" required=""></p>
+ 
+                    <p><label>Contraseña:</label></p>
+                        <input name="contraseña" type="password" id="contraseña" placeholder="Ingresa contraseña" required=""></p>
+ 
+                    <p id="bot"><input type="submit" id="submit" name="submit" value="Ingresar" class="boton"></p>
+                </form>
+            </div><!--fin cuerpo-->
+ 
+            <div id="pie">Iniciar Sesion Y Registro</div>
+        </div><!-- fin contenedor -->
+    </div><!--fin envoltura-->
+</body>
+ 
+</html>
